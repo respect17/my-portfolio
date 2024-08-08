@@ -4,86 +4,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Kudzai Murimi | Fullstack Developer</title>
     <link href="assets/css/tailwind.css" rel="stylesheet">
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="node_modules/animate.css/animate.min.css" rel="stylesheet">
-
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg bg-light shadow-lg">
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-lg">
         <div class="container">
-            <a class="navbar-brand text-xl font-bold" href="#">My Portfolio</a>
+            <a class="navbar-brand text-xl font-bold" href="#">Kudzai Murimi</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#writing">Writing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <section id="about" class="bg-gray-100 py-20">
-        <div class="container mx-auto">
-            <h2 class="text-4xl font-bold mb-4 animate__animated animate__fadeInUp">About Me</h2>
 
+    <!-- About Section -->
+    <section id="about" class="py-20">
+        <div class="container mx-auto">
             <h2 class="text-4xl font-bold mb-4">About Me</h2>
+            <p class="text-lg leading-relaxed mb-4">
+                I’m a 24-year-old Junior Fullstack developer specialising in the React and Laravel ecosystem. I
+                freelance, and most of my work has been for Cape Town-based LekkerCommerce.
+            </p>
             <p class="text-lg leading-relaxed">
-                I'm a passionate web developer with experience in building responsive and dynamic websites.
+                I have experience working on both the front and back end with different languages and technologies. I am
+                also an aspiring technical writer and post regularly on several platforms.
             </p>
         </div>
     </section>
-    <section id="projects" class="py-20">
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-gray-100 py-20">
         <div class="container mx-auto">
-            <h2 class="text-4xl font-bold mb-4">Projects</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img src="assets/images/project1.jpg" class="card-img-top" alt="Project 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 1</h5>
-                            <p class="card-text">Description of project 1.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Repeat for more projects -->
-            </div>
-        </div>
-    </section>
-    <section id="contact" class="bg-gray-100 py-20">
-        <div class="container mx-auto">
-            <h2 class="text-4xl font-bold mb-4">Contact</h2>
-            <form>
-                <div class="mb-4">
-                    <label for="name" class="block text-lg font-medium">Name</label>
-                    <input type="text" id="name" class="form-control mt-1 block w-full">
-                </div>
-                <div class="mb-4">
-                    <label for="email" class="block text-lg font-medium">Email</label>
-                    <input type="email" id="email" class="form-control mt-1 block w-full">
-                </div>
-                <div class="mb-4">
-                    <label for="message" class="block text-lg font-medium">Message</label>
-                    <textarea id="message" class="form-control mt-1 block w-full"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+            <h2 class="text-4xl font-bold mb-4">Skills</h2>
+            <ul class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>ReactJS</li>
+                <li>NextJS</li>
+                <li>Typescript</li>
+                <li>Tailwind</li>
+                <li>React Native</li>
+                <li>PHP</li>
+                <li>Laravel</li>
+                <li>MySQL</li>
+                <li>Nginx</li>
+                <li>PrestaShop</li>
+                <li>GRAPHQL</li>
+                <li>Pest</li>
+                <li>jQuery</li>
+            </ul>
         </div>
     </section>
 
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold mb-4">Software Development Portfolio</h2>
+
+            <!-- CryptoConvert -->
+            <div class="mb-8">
+                <h3 class="text-2xl font-semibold">CryptoConvert</h3>
+                <p class="text-gray-700">October 2023 - November 2023</p>
+                <p><a href="https://www.cryptoconvert.co.za" class="text-blue-500 underline">www.cryptoconvert.co.za</a>
+                </p>
+                <p class="text-lg leading-relaxed">
+                    I was on a project for a company started by one of the Luno cofounders. I helped build up a custom
+                    payment module for the PrestaShop platform under the guidance and supervision of a senior developer.
+                    The payment module is scheduled to be deployed to production for their online merchants.
+                </p>
+                <p class="text-lg leading-relaxed">
+                    I was also responsible for setting up the fully working online demo at <a
+                        href="https://shop.lekkercommerce.co.za"
+                        class="text-blue-500 underline">shop.lekkercommerce.co.za</a>, which I deployed to Forge with
+                    some custom Nginx configuration.
+                </p>
+                <p><strong>Technologies:</strong> PrestaShop, jQuery, PHP, Nginx.</p>
+                <p><strong>Reference:</strong> moreblessings@lekkercommerce.co.za, Director</p>
+            </div>
+
+            <!-- JusaMusha -->
+            <div class="mb-8">
+                <h3 class="text-2xl font-semibold">JusaMusha</h3>
+                <p class="text-gray-700">June 2023 - October 2023</p>
+                <p><a href="https://jusamusha.co.za" class="text-blue-500 underline">jusamusha.co.za</a></p>
+                <p class="text-lg leading-relaxed">
+                    JusaMusha is a VAS platform built for the underbanked immigrant community. During my tenure, I
+                    worked on feature development and bug fixes in ReactJS & Laravel.
+                </p>
+                <p><strong>Technologies:</strong> React Native, NextJS, ReactJS, Typescript, Tailwind, Laravel, Pest,
+                    GraphQL.</p>
+                <p><strong>Reference:</strong> moreblessings@lekkercommerce.co.za, Director</p>
+            </div>
+
+            <!-- LekkerInvoice -->
+            <div class="mb-8">
+                <h3 class="text-2xl font-semibold">LekkerInvoice</h3>
+                <p class="text-gray-700">June 2022 - May 2023</p>
+                <p><a href="https://jusamusha.co.za" class="text-blue-500 underline">jusamusha.co.za</a></p>
+                <p class="text-lg leading-relaxed">
+                    I was a junior front-end developer on the team that built the invoicing platform. We built the
+                    frontend functionality with ReactJS and InertiaJS, and the UI with Tailwind and Storybook.
+                </p>
+                <p><strong>Technologies:</strong> NextJS, ReactJS, Tailwind, Laravel, Pest, Typescript, GraphQL.</p>
+                <p><strong>Reference:</strong> moreblessings@lekkercommerce.co.za, Director</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Writing Section -->
+    <section id="writing" class="bg-gray-100 py-20">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold mb-4">Technical Writing Portfolio</h2>
+            <p class="text-lg leading-relaxed">
+                I write to document my thoughts and to hone the thought processes that will make me a better developer
+                overall with time. Below are samples of my recent writing:
+            </p>
+            <ul class="list-disc pl-5">
+                <li><a href="https://dev.to/respect17/get-started-with-react-graphql-app-in-few-steps-53ie"
+                        class="text-blue-500 underline">Get Started with React GraphQL App in Few Steps</a></li>
+                <li><a href="https://dev.to/respect17/react-native-hooks-2aop" class="text-blue-500 underline">React
+                        Native Hooks</a></li>
+                <li><a href="https://dev.to/respect17/why-utilizing-nextjs-to-fabricate-greater-undertakings-29pk"
+                        class="text-blue-500 underline">Why Utilizing NextJS to Fabricate Greater Undertakings</a></li>
+                <li><a href="https://dev.to/respect17/explanation-to-react-js-hook-2n12"
+                        class="text-blue-500 underline">Explanation to React JS Hook</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold mb-4">Contact</h2>
+            <p class="text-lg leading-relaxed mb-4">
+                Feel free to reach out via email at <a href="mailto:respectmurimi2000@gmail.com"
+                    class="text-blue-500 underline">respectmurimi2000@gmail.com</a>.
+            </p>
+            <p class="text-lg leading-relaxed">
+                You can also find me on the following platforms:
+            </p>
+            <ul class="list-disc pl-5">
+                <li><a href="https://github.com/respect17" class="text-blue-500 underline">GitHub</a></li>
+                <li><a href="https://dev.to/respect17" class="text-blue-500 underline">DEV</a></li>
+                <li><a href="https://hackernoon.com/u/respect17" class="text-blue-500 underline">HackerNoon</a></li>
+                <li><a href="https://www.linkedin.com/in/kudzai-murimi-50b7262bb/"
+                        class="text-blue-500 underline">LinkedIn</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Kudzai Murimi. All rights reserved.</p>
+        </div>
+    </footer>
+
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/scripts.js"></script>
 </body>
 
 </html>
